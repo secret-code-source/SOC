@@ -1,11 +1,11 @@
 Implementation of manuscript 'Second-order correlation learning for self-supervised speech emotion recognition'
 
-For data pre-processing and partitioning, please refer to the [EmoBox repository](https://github.com/emo-box/EmoBox).
+- For data pre-processing and partitioning, please refer to the [EmoBox repository](https://github.com/emo-box/EmoBox).
 
-For the pre-trained up-stream models, please refer to the official Hugging Face repositories:
-- **Wav2Vec 2.0**: [`facebook/wav2vec2-base-960h`](https://huggingface.co/facebook/wav2vec2-base-960h)
-- **HuBERT**: [`facebook/hubert-base-ls960`](https://huggingface.co/facebook/hubert-base-ls960)
-- **WavLM**: [`microsoft/wavlm-base-plus`](https://huggingface.co/microsoft/wavlm-base-plus)
+- For the pre-trained up-stream models, please refer to the official Hugging Face repositories:
+  - **Wav2Vec 2.0**: [`facebook/wav2vec2-base-960h`](https://huggingface.co/facebook/wav2vec2-base-960h)
+  - **HuBERT**: [`facebook/hubert-base-ls960`](https://huggingface.co/facebook/hubert-base-ls960)
+  - **WavLM**: [`microsoft/wavlm-base-plus`](https://huggingface.co/microsoft/wavlm-base-plus)
 
 ## 📝 To-Do List
 
