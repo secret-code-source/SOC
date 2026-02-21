@@ -13,5 +13,5 @@ Implementation of manuscript 'Second-order correlation learning for self-supervi
 - [x] Instructions for data pre-processing and partitioning (Adapted from EmoBox).
 - [x] Add instructions for **preparing pre-trained upstream models** (Wav2Vec 2.0, HuBERT, WavLM).
 - [ ] Release the requirements.txt and environment setup guide (Tested on Ubuntu 20.04 & CUDA 11.8, Python 3.9, PyTorch 2.0+).
-- [ ] Upload training and evaluation script (Coming soon).
+- [ ] Upload training and evaluation script (Coming Soon...).
 - [ ] Add a Jupyter Notebook demo for t-SNE visualization.
