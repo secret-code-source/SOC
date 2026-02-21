@@ -3,9 +3,9 @@ import torch.nn as nn
 
 class SOCPooling(nn.Module):
     """
-    Second-Order Correlation (SOC) Pooling Layer.
+    Second-Order Correlation (SOC) Layer.
 
-    Paper: Second-order correlation learning for self-supervised speech emotion recognition.
+    Paper: Geometric Second-Order Feature Correlation Learning for Self-Supervised Speech Emotion Recognition.
     """
 
     def __init__(self, in_dim=768, spd_dim=24):
