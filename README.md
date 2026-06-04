@@ -1,4 +1,4 @@
-# SOC: Second-Order Correlation Pooling for SER
+# Geometric Second-Order Feature Correlation Learning for Self-Supervised Speech Emotion Recognition
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c)](https://pytorch.org/)
