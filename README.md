@@ -65,9 +65,12 @@ print(z.shape)  # [8, 300]
 
 ## Data
 
-Use EmoBox-style metadata and speaker-independent fold files. Place extracted
-SSL features as `.npy` files whose names match the metadata `key` field.
-Audio paths in the metadata should be valid from the repository root.
+For data preprocessing and speaker-independent partitioning, please refer to
+the [EmoBox repository](https://github.com/emo-box/emobox).
+
+This training pipeline expects frozen SSL features to be pre-extracted and
+stored as `.npy` files whose names match the metadata `key` field. It does not
+perform online SSL feature extraction during training.
 
 See `data/README.md` for the expected layout.
 
@@ -112,7 +115,7 @@ If you use this repository, please cite our Interspeech 2026 paper:
 ```bibtex
 @inproceedings{soc_interspeech2026,
   title     = {Geometric Second-Order Feature Correlation Learning for Self-Supervised Speech Emotion Recognition},
-  author    = {Shuanglin Li,Ruxiao Qian,Siyang Song},
+  author    = {Shuanglin Li, Ruxiao Qian, Siyang Song},
   booktitle = {Proc. Interspeech},
   year      = {2026}
 }
