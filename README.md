@@ -101,7 +101,7 @@ If you use this repository, please cite our Interspeech 2026 paper:
 ```bibtex
 @inproceedings{soc_interspeech2026,
   title     = {Geometric Second-Order Feature Correlation Learning for Self-Supervised Speech Emotion Recognition},
-  author    = {Author names to be updated},
+  author    = {Shuanglin Li,Ruxiao Qian,Siyang Song},
   booktitle = {Proc. Interspeech},
   year      = {2026}
 }
