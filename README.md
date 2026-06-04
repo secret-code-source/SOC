@@ -30,6 +30,17 @@ baseline implementations.
 - Feature extraction script for frozen Hugging Face SSL backbones.
 - Tiny CPU smoke test that verifies the full training path.
 
+## Environment
+
+The experiments in the paper were conducted on an **NVIDIA RTX 4090** GPU.
+
+Tested environment:
+
+- Ubuntu 20.04
+- Python 3.9
+- CUDA 11.8
+- PyTorch 2.0+
+
 ## Quick Start
 
 ```bash
