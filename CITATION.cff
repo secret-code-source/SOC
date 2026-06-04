@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Geometric Second-Order Feature Correlation Learning for Self-Supervised Speech Emotion Recognition"
+message: "If you use this code, please cite the associated Interspeech 2026 paper."
+type: software
+authors:
+  - family-names: "To be updated"
+    given-names: "Author names"
+repository-code: "https://github.com/secret-code-source/SOC"
+license: "MIT"

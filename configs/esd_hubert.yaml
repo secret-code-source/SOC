@@ -1,0 +1,32 @@
+dataset: esd
+file_prefix: esd
+base_dir: data/esd
+feature_dir: data/features/esd_hubert
+output_dir: outputs/esd_hubert_soc
+
+backbone_source: facebook/hubert-base-ls960
+input_jsonl: data/esd/esd.jsonl
+
+num_folds: 5
+label_map:
+  Neutral: 0
+  Happy: 1
+  Sad: 2
+  Angry: 3
+  Surprise: 4
+
+input_dim: 768
+spd_dim: 24
+hidden_dim: 128
+dropout: 0.4
+
+device: auto
+seed: 2024
+batch_size: 64
+epochs: 100
+patience: 15
+val_ratio: 0.2
+lr: 1.0e-4
+weight_decay: 1.0e-4
+warmup_ratio: 0.1
+grad_clip: 1.0

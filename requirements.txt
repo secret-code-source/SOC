@@ -1,0 +1,6 @@
+numpy
+torch
+torchaudio
+tqdm
+PyYAML
+transformers

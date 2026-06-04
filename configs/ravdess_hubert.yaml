@@ -1,0 +1,35 @@
+dataset: ravdess
+file_prefix: ravdess
+base_dir: data/ravdess
+feature_dir: data/features/ravdess_hubert
+output_dir: outputs/ravdess_hubert_soc
+
+backbone_source: facebook/hubert-base-ls960
+input_jsonl: data/ravdess/ravdess.jsonl
+
+num_folds: 5
+label_map:
+  Neutral: 0
+  Calm: 1
+  Happy: 2
+  Sad: 3
+  Angry: 4
+  Fearful: 5
+  Disgust: 6
+  Surprised: 7
+
+input_dim: 768
+spd_dim: 8
+hidden_dim: 128
+dropout: 0.4
+
+device: auto
+seed: 2024
+batch_size: 32
+epochs: 100
+patience: 15
+val_ratio: 0.2
+lr: 1.0e-4
+weight_decay: 1.0e-4
+warmup_ratio: 0.1
+grad_clip: 1.0
