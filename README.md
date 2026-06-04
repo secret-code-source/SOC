@@ -6,15 +6,12 @@
 [![Task](https://img.shields.io/badge/Task-Speech%20Emotion%20Recognition-lightgrey)]()
 [![Interspeech](https://img.shields.io/badge/Interspeech-2026-8A2BE2)]()
 
-Minimal PyTorch implementation of **Geometric Second-Order Feature Correlation
+Official implementation of **Geometric Second-Order Feature Correlation
 Learning for Self-Supervised Speech Emotion Recognition**.
 
 This work has been accepted by **Interspeech 2026**.
 
-SOC aggregates frozen SSL frame-level speech representations by modelling
-feature correlations as covariance descriptors, followed by Log-Euclidean
-mapping and a lightweight classifier.
-
+SOC encodes frozen SSL frame-level representations as covariance descriptors, applies Log-Euclidean mapping to resolve geometric mismatch.
 <p align="center">
   <img src="assets/method.png" alt="SOC method overview" width="900">
 </p>
