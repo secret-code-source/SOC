@@ -16,10 +16,6 @@ SOC encodes frozen SSL frame-level representations as covariance descriptors, ap
   <img src="assets/method.png" alt="SOC method overview" width="900">
 </p>
 
-This repository provides the SOC layer and training pipeline. It does not
-include raw datasets, extracted features, model checkpoints, experiment logs, or
-baseline implementations.
-
 ## Highlights
 
 - Compact `SOCPooling` module for direct reuse in PyTorch projects.
