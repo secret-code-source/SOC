@@ -11,7 +11,7 @@ Learning for Self-Supervised Speech Emotion Recognition**.
 
 This work has been accepted by **Interspeech 2026**.
 
-SOC encodes frozen SSL frame-level representations as covariance descriptors, applies Log-Euclidean mapping to resolve geometric mismatch.
+SOC encodes frozen SSL frame-level representations as covariance descriptors and uses Log-Euclidean mapping to bridge the mismatch between SPD manifold-valued statistics and Euclidean classifiers.
 <p align="center">
   <img src="assets/method.png" alt="SOC method overview" width="900">
 </p>
