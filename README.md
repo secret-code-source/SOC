@@ -18,10 +18,9 @@ SOC encodes frozen SSL frame-level representations as covariance descriptors and
 
 ## Highlights
 
-- Compact `SOCPooling` module for direct reuse in PyTorch projects.
-- Training pipeline for EmoBox-style speaker-independent fold files.
-- Feature extraction script for frozen Hugging Face SSL backbones.
-- Tiny CPU smoke test that verifies the full training path.
+- Uses covariance descriptors, SPD geometry, and Log-Euclidean vectorization.
+- Plug-in PyTorch `SOCPooling` module for frozen SSL speech representations.
+- Lightweight downstream aggregation layer without SSL pre-training or backbone fine-tuning.
 
 ## Environment
 
