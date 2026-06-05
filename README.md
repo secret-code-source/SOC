@@ -95,8 +95,6 @@ python scripts/train.py --config configs/ravdess_hubert.yaml
 python scripts/train.py --config configs/esd_hubert.yaml
 ```
 
-The default RAVDESS config uses five speaker-independent folds.
-
 ## Optional Visualization
 
 We provide an optional t-SNE utility for visualizing SOC embeddings from a
