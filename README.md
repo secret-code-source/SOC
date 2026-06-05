@@ -35,9 +35,25 @@ Tested environment:
 
 ## Quick Start
 
+Clone the repository and install dependencies:
+
 ```bash
+git clone https://github.com/secret-code-source/SOC.git
+cd SOC
 pip install -r requirements.txt
+```
+
+Run a CPU smoke test with synthetic `.npy` features:
+
+```bash
 python scripts/smoke_test.py
+```
+
+After preparing metadata and pre-extracted SSL features, train SOC with:
+
+```bash
+python scripts/train.py --config configs/ravdess_hubert.yaml
+python scripts/train.py --config configs/esd_hubert.yaml
 ```
 
 Run all commands from the repository root.
@@ -57,7 +73,7 @@ print(z.shape)  # [8, 300]
 
 ## Data
 
-For data preprocessing and speaker-independent partitioning, please refer to
+For data preprocessing, SSL feature extraction, and speaker-independent partitioning, please refer to
 the [EmoBox repository](https://github.com/emo-box/emobox).
 
 This training pipeline expects frozen SSL features to be pre-extracted and
@@ -72,9 +88,6 @@ See `data/README.md` for the expected layout.
 python scripts/extract_features.py --config configs/ravdess_hubert.yaml
 ```
 
-The feature extractor uses the `backbone_source`, `input_jsonl`, and
-`feature_dir` fields in the config.
-
 ## Training
 
 ```bash
@@ -86,19 +99,8 @@ The default RAVDESS config uses five speaker-independent folds.
 
 ## Optional Visualization
 
-After training a checkpoint, an optional t-SNE visualization utility is
-available:
-
-```bash
-pip install -r requirements-viz.txt
-python scripts/visualize_tsne.py \
-  --config configs/ravdess_hubert.yaml \
-  --fold 1 \
-  --checkpoint outputs/ravdess_hubert_soc/fold_1_best.pth \
-  --output figures/ravdess_fold1_tsne.png
-```
-
-See `docs/tsne_visualization.md` for details.
+We provide an optional t-SNE utility for visualizing SOC embeddings from a
+trained checkpoint. See `docs/tsne_visualization.md` for usage.
 
 ## Citation
 
